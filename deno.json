@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": "@choco/k-means",
   "description": "A simple implementation of the k-means clustering algorithm",
   "license": "MIT",
