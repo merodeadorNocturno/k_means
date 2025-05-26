@@ -1,4 +1,4 @@
-import { parse } from "jsr:@std/csv";
+import { parse } from "jsr:@std/csv@1.0.6";
 
 const DATA_PATH = "./csv/data.csv";
 const DATA_PATH_1 = "./csv/data_1.csv";
@@ -23,6 +23,8 @@ const d_1: Record<"d1" | "d2" | "index", string>[] = parse(
   },
 );
 
-export const data_1 = d_1.map(({ d1, d2, index }) => {
-  return { index, d1, d2 };
-});
+export const data_1: Record<"index" | "d1" | "d2", string>[] = d_1.map(
+  ({ d1, d2, index }) => {
+    return { index, d1, d2 };
+  },
+);

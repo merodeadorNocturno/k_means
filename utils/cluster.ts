@@ -1,5 +1,5 @@
-import { encodeHex } from "jsr:@std/encoding/hex";
-import { Point, Cluster, RawData } from "../types/cluster_types.ts";
+import { encodeHex } from "jsr:@std/encoding@1.0.10";
+import type { Point, Cluster, RawData } from "../types/cluster_types.ts";
 import { getRandomColor } from "./colors.ts";
 import { createClusterSVG } from "./svg.ts";
 

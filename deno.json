@@ -1,13 +1,22 @@
 {
+  "version": "0.1.0",
+  "name": "@choco/k-means",
+  "description": "A simple implementation of the k-means clustering algorithm",
+  "license": "MIT",
   "tasks": {
     "dev": "deno run --watch main.ts"
   },
   "imports": {
     "@std/assert": "jsr:@std/assert@1",
     "@std/csv": "jsr:@std/csv@^1.0.6",
-    "@std/encoding": "jsr:@std/encoding@^1.0.10",
-    "domparser": "npm:domparser@^0.1.1",
-    "svg": "npm:svg@^0.1.0",
-    "xmldom": "npm:xmldom@^0.6.0"
+    "@std/encoding": "jsr:@std/encoding@^1.0.10"
+  },
+  "exports": {
+    "./types/cluster_types.ts": "./types/cluster_types.ts",
+    "./utils/cluster.ts": "./utils/cluster.ts",
+    "./utils/colors.ts": "./utils/colors.ts",
+    "./utils/parser.ts": "./utils/parser.ts",
+    "./utils/parse_csv.ts": "./utils/parse_csv.ts",
+    "./utils/svg.ts": "./utils/svg.ts"
   }
 }

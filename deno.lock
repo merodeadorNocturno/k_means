@@ -5,15 +5,13 @@
     "jsr:@std/assert@1": "1.0.13",
     "jsr:@std/bytes@^1.0.5": "1.0.5",
     "jsr:@std/csv@*": "1.0.6",
+    "jsr:@std/csv@1.0.6": "1.0.6",
     "jsr:@std/csv@^1.0.6": "1.0.6",
     "jsr:@std/encoding@*": "1.0.10",
+    "jsr:@std/encoding@1.0.10": "1.0.10",
     "jsr:@std/encoding@^1.0.10": "1.0.10",
     "jsr:@std/internal@^1.0.6": "1.0.7",
-    "jsr:@std/streams@^1.0.9": "1.0.9",
-    "npm:domparser@~0.1.1": "0.1.1",
-    "npm:svg@*": "0.1.0",
-    "npm:svg@0.1": "0.1.0",
-    "npm:xmldom@0.6": "0.6.0"
+    "jsr:@std/streams@^1.0.9": "1.0.9"
   },
   "jsr": {
     "@std/assert@1.0.13": {
@@ -44,28 +42,11 @@
       ]
     }
   },
-  "npm": {
-    "domparser@0.1.1": {
-      "integrity": "sha512-FNLAnTL9IffqaA0ye030WxQC8S1J9eED9vt0p2HEofiWoZexgTSR8RTjVYRSf9SOPjVqulOBZs5d+pvCGlf95g==",
-      "dependencies": [
-        "xmldom"
-      ]
-    },
-    "svg@0.1.0": {
-      "integrity": "sha512-tKPPdZUNwJoWhmDU4MvzJDoS3VmLaq47T0OuYLKYE4ZAnB+ockbt3F10fvWXXB7ZlpV0WEUhPd7sAAYg2WGCVQ=="
-    },
-    "xmldom@0.6.0": {
-      "integrity": "sha512-iAcin401y58LckRZ0TkI4k0VSM1Qg0KGSc3i8rU+xrxe19A/BN1zHyVSJY7uoutVlaTSzYyk/v5AmkewAP7jtg=="
-    }
-  },
   "workspace": {
     "dependencies": [
       "jsr:@std/assert@1",
       "jsr:@std/csv@^1.0.6",
-      "jsr:@std/encoding@^1.0.10",
-      "npm:domparser@~0.1.1",
-      "npm:svg@0.1",
-      "npm:xmldom@0.6"
+      "jsr:@std/encoding@^1.0.10"
     ]
   }
 }

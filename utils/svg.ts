@@ -1,4 +1,4 @@
-import { Point, Cluster } from "../types/cluster_types.ts";
+import type { Point, Cluster } from "../types/cluster_types.ts";
 
 export function createClusterSVG(
   clusters: Cluster[],
