@@ -2,11 +2,11 @@ import { Point, Cluster } from "../types/cluster_types.ts";
 import { getRandomColor } from "./colors.ts";
 import { average } from "./cluster.ts";
 
-const MAX_CLUSTERS = 100;
+const ELEMENTS_PER_CLUSTER = 10;
 
 export function divide_data_set_clusters(
   my_data: Record<"index" | "d1" | "d2", string>[],
-  cluster_size: number = MAX_CLUSTERS,
+  cluster_size: number = ELEMENTS_PER_CLUSTER,
 ): Cluster[] {
   const clusters: Cluster[] = [];
   let color = "";
