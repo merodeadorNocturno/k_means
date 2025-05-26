@@ -1,4 +1,9 @@
 /**
+ * This module rovides a color from a predefined list based on the given index.
+ * @module
+ */
+
+/**
  * Provides a color from a predefined list based on the given index.
  * The list is reversed to get a wider range of colors for smaller indices.
  * @param index The index to select the color from the array.
