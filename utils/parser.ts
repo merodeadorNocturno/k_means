@@ -26,5 +26,3 @@ const d_1: Record<"d1" | "d2" | "index", string>[] = parse(
 export const data_1 = d_1.map(({ d1, d2, index }) => {
   return { index, d1, d2 };
 });
-
-// console.log(data_1[0]);
