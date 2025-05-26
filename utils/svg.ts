@@ -1,5 +1,19 @@
+/**
+ * This module provides utility functions for generating SVG representations of clusters.
+ * It includes a function to create an SVG string from an array of clusters.
+ * @module
+ */
 import type { Point, Cluster } from "../types/cluster_types.ts";
 
+/**
+ * Generates an SVG string representation of the given clusters.
+ * Points are drawn as rhombuses and centroids as crosshairs.
+ * @param clusters An array of Cluster objects to visualize.
+ * @param width The width of the SVG canvas. Defaults to 640.
+ * @param height The height of the SVG canvas. Defaults to 480.
+ * @returns A string containing the SVG markup.
+ * @throws {Error} If a cluster centroid is undefined.
+ */
 export function createClusterSVG(
   clusters: Cluster[],
   width: number = 640,

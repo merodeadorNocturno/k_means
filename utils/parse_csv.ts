@@ -1,9 +1,24 @@
+/**
+ * This module provides utility functions for parsing raw data and dividing it into clusters.
+ * It includes functions to create initial clusters from raw data or pre-processed points.
+ * @module
+ */
 import type { Point, Cluster } from "../types/cluster_types.ts";
 import { getRandomColor } from "./colors.ts";
 import { average } from "./cluster.ts";
 
 const ELEMENTS_PER_CLUSTER = 10;
 
+/**
+ * Divides raw data entries into clusters based on a specified cluster size.
+ * It assigns a random color to each cluster and calculates the initial centroid
+ * for each cluster based on the average of its assigned points.
+ * Note: The input data is expected to have 'd1' and 'd2' properties as strings
+ * that can be parsed into numbers.
+ * @param my_data An array of raw data objects, typically from a parsed CSV.
+ * @param cluster_size The desired number of points per cluster. Defaults to ELEMENTS_PER_CLUSTER (10).
+ * @returns An array of Cluster objects with points and initial centroids.
+ */
 export function divide_data_set_clusters(
   my_data: Record<"index" | "d1" | "d2", string>[],
   cluster_size: number = ELEMENTS_PER_CLUSTER,
@@ -43,6 +58,14 @@ export function divide_data_set_clusters(
   return clusters;
 }
 
+/**
+ * Divides an array of Point objects into clusters based on a specified cluster size.
+ * It assigns a random color to each cluster and calculates the initial centroid
+ * for each cluster based on the average of its assigned points.
+ * @param points An array of Point objects, which are already in a numerical format.
+ * @param cluster_size The desired number of points per cluster.
+ * @returns An array of Cluster objects with points and initial centroids.
+ */
 export function divide_and_set_clusters(
   points: Point[],
   cluster_size: number,

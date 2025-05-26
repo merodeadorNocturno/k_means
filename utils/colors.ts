@@ -1,3 +1,9 @@
+/**
+ * Provides a color from a predefined list based on the given index.
+ * The list is reversed to get a wider range of colors for smaller indices.
+ * @param index The index to select the color from the array.
+ * @returns A CSS color string.
+ */
 export function getColor(index: number): string {
   const color_array = [
     "aliceblue",
@@ -152,6 +158,11 @@ export function getColor(index: number): string {
   console.log("color", color_array[index]);
   return color_array[index % color_array.length];
 }
+
+/**
+ * Generates a random hexadecimal color string.
+ * @returns A random hexadecimal color string (e.g., "#RRGGBB").
+ */
 export function getRandomColor(): string {
   const letters = "0123456789ABCDEF";
   let color = "#";
